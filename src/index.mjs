@@ -8,6 +8,10 @@ const someTask = new Todo("Walk the doggo");
 someTask.dueDate = "12/12/21";
 // change description
 someTask.description = "Some description";
+// delete task
+someTask.delete();
+// set task priority
+someTask.setPriority(3);
 
 const project = new Project("Dog Tasks");
 

@@ -4,18 +4,14 @@ import TodoAlert from "./TodoAlert.js";
 
 const someTask = new Todo("Walk the doggo");
 
-console.log(someTask.title);
-
+//  change date
 someTask.dueDate = "12/12/21";
-
-console.log(someTask.dueDate);
-
-console.log(someTask.project);
+// change description
+someTask.description = "Some description";
 
 const project = new Project("Dog Tasks");
 
+// add task to project
 project.addTodo(someTask);
-
-console.log(project.todos);
-
-console.log(someTask.project);
+// remove task from project
+project.removeTodo(someTask);
